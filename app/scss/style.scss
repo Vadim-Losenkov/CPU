@@ -1,0 +1,130 @@
+@import "fonts";
+@import "vars";
+@import "mixins";
+@import "global";
+@import "libs";
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  min-height: 75px;
+  border-bottom: 2px solid #e9e9e9;
+  z-index: 100;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -2px;
+  }
+  &__menu-link {
+    padding: 20px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    color: #222222;
+    &.active {
+      border-radius: 2px;
+      border-bottom: 2px solid $blue;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+
+  &__inner {
+    overflow: hidden;
+  }
+  &__item {
+    position: relative;
+  }
+  &__item-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.7);
+    max-width: 620px;
+  }
+  &__item-link {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 5px 30px;
+    padding-right: 60px;
+    position: relative;
+
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #0066ff;
+
+    img {
+      position: absolute;
+      width: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+  }
+
+  &__nav-arrow--left {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    left: 160px;
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+  }
+  &__nav-arrow--right {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    right: 160px;
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+  }
+
+
+  &__pagination {
+    text-align: center;
+    transform: translateY(20px)
+  }
+
+  &__box {
+    padding-top: 42px;
+    border-right: 2px solid #dfdfdf;
+    border-left: 2px solid #dfdfdf;
+    padding-bottom: 90px;
+  }
+}
+
+@import "media";

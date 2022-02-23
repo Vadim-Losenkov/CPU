@@ -1,0 +1,42 @@
+.container {
+  max-width: 1130px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 177%;
+  background-color: #F9F9F9;
+  color: #222;
+  font-family: 'Comfortaa', cursive;
+// font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.main {
+  padding-top: 75px;
+}

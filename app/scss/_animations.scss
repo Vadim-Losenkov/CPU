@@ -1,0 +1,203 @@
+.blue-line-animation {
+  animation: animdash 3s 1 forwards;
+  stroke-dasharray: 1600;
+}
+.blue-line-dashboard {
+  animation: animdashRoadmap 3s 1 forwards;
+  stroke-dasharray: 1318;
+}
+.shark-wrapper {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.blue-circle {
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+}
+.blue-gradient-afterAnimation {
+  opacity: 0;
+}
+.blue-gradient-beforeAnimation {
+  opacity: 1;
+}
+
+.roadmap-animated-circle {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all .3s;
+  &.show {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all .3s;
+  }
+}
+
+.checked-roadmap {
+  stroke-dasharray: 7825;
+  stroke-dashoffset: 7825;
+  
+  &.item-1 {
+    stroke-dashoffset: 7615;
+  }
+  &.item-2 {
+    stroke-dashoffset: 7250;
+    
+  }
+  &.item-3 {
+    stroke-dashoffset: 6830;
+    
+  }
+  &.item-4 {
+    stroke-dashoffset: 5965;
+    
+  }
+  &.item-5 {
+    stroke-dashoffset: 5470;
+    
+  }
+  &.item-6 {
+    stroke-dashoffset: 4900;
+    
+  }
+  &.item-7 {
+    stroke-dashoffset: 4380;
+    
+  }
+  &.item-8 {
+    stroke-dashoffset: 4000;
+    
+  }
+  &.item-9 {
+    stroke-dashoffset: 3460;
+    
+  }
+  &.item-10 {
+    stroke-dashoffset: 2910;
+  }
+  &.item-11 {
+    stroke-dashoffset: 2460;
+  }
+  &.item-12 {
+    
+    stroke-dashoffset: 1940;
+  }
+  &.item-13 {
+    
+    stroke-dashoffset: 1940;
+  }
+  &.item-14 {
+    
+    stroke-dashoffset: 1440;
+  }
+  &.item-15 {
+    stroke-dashoffset: 1000;
+  }
+  &.item-16 {
+    stroke-dashoffset: 465;
+  }
+}
+
+
+// .roadmap-animated-circle {
+//   opacity: 0 !important;
+// }
+
+
+@keyframes levitation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes topCircles {
+  0% {
+    opacity: 0;
+    width: 40%;
+  }
+  1% {
+    width: 40%;
+    opacity: 1;
+  }
+  25% {
+    opacity: .7;
+    width: 50%;
+  }
+  50% {
+    width: 70%;
+    opacity: .5;
+  }
+  75% {
+    opacity: .2;
+    width: 85%;
+  }
+  99% {
+    width: 100%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.01;
+    width: 40px;
+    height: 40px;
+    bottom: -40%;
+  }
+  10% {
+    opacity: 0.05;
+  }
+  25% {
+    opacity: .09;
+  }
+  50% {
+    width: 70px;
+    height: 70px;
+    opacity: .08;
+    bottom: -60%;
+  }
+  90% {
+    width: 100px;
+    height: 100px;
+    opacity: .05;
+    bottom: -80%;
+  }
+  99% {
+    width: 110px;
+    height: 110px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 1540;
+  }
+}
+@keyframes animdashRoadmap {
+  to {
+    stroke-dashoffset: 1295;
+  }
+}
